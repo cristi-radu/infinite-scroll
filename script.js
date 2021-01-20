@@ -1,5 +1,5 @@
 const imageContainer=document.getElementById('image-container');
-const loade=document.getElementById('loader');
+const loader=document.getElementById('loader');
 
 let ready=false;
 let imagesLoaded=0;
@@ -17,6 +17,7 @@ function imageLoaded(){
     imagesLoaded++;
     if(imagesLoaded===totalImages){
         ready=true;
+        loader.hidden=true;
     }
 }
 
